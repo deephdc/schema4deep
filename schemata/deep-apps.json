@@ -4,9 +4,68 @@
     "type": "object",
     "properties": {
         "title": {
-          "description": "Name of the Data Science application",
-          "type": "string"
+            "description": "Name of the Data Science application",
+            "type": "string"
+        },
+        "summary": {
+            "description": "Short text describing the value of the Data Science application",
+            "type": "string"
+        },
+        "description": {
+            "description": "Elaborated description of the Data Science application",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "date_creation": {
+            "description": "Data Science application creation date",
+            "type": "string",
+            "format": "date"
+        },
+        "keywords": {
+            "description": "Topic/s to best describe the Data Science application",
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "type": "string"
+            }
+        },
+        "license": {
+            "description": "License adopted by the Data Science application",
+            "type": "string"
+        },
+        "sources": {
+            "title": "sources",
+            "type": "object",
+            "properties": {
+                "dockerfile_repo": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "docker_registry_repo": {
+                    "type": "string",
+                    "format": "uri-reference"
+                },
+                "code": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "pre-trained_weight": {
+                    "type": "string",
+                    "format": "uri"
+                }
+            },
+			"required": ["dockerfile_repo", "docker_registry_repo", "code"]
         }
     },
-    "required": ["title"]
+    "required": [
+        "title",
+        "summary",
+        "description",
+        "date_creation",
+        "keywords",
+        "license",
+		"sources"
+    ]
 }
