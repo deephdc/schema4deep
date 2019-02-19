@@ -39,18 +39,22 @@
             "type": "object",
             "properties": {
                 "dockerfile_repo": {
+                    "description": "DEEP-OC repository URL",
                     "type": "string",
                     "format": "uri"
                 },
                 "docker_registry_repo": {
+                    "description": "Docker registry repository (relative) URL",
                     "type": "string",
                     "format": "uri-reference"
                 },
                 "code": {
+                    "description": "Data Science application source code repository URL",
                     "type": "string",
                     "format": "uri"
                 },
-                "pre-trained_weight": {
+                "pre_trained_weights": {
+                    "description": "URL of file containing weights from training",
                     "type": "string",
                     "format": "uri"
                 }
