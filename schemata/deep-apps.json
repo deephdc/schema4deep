@@ -1,6 +1,5 @@
 {
     "$schema": "https://json-schema.org/schema#",
-
     "type": "object",
     "properties": {
         "title": {
@@ -56,7 +55,11 @@
                     "format": "uri"
                 }
             },
-			"required": ["dockerfile_repo", "docker_registry_repo", "code"]
+            "required": [
+                "dockerfile_repo",
+                "docker_registry_repo",
+                "code"
+            ]
         }
     },
     "required": [
@@ -66,6 +69,6 @@
         "date_creation",
         "keywords",
         "license",
-		"sources"
+        "sources"
     ]
 }
