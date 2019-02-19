@@ -1,5 +1,6 @@
 import argparse
 from jsonschema import Draft7Validator
+from jsonschema import draft7_format_checker
 import simplejson as json
 
 
@@ -27,4 +28,6 @@ def validate():
 
     for f in args.instance:
         instance = load_json(f)
-        Draft7Validator(schema).validate(instance)
+        Draft7Validator(
+            schema,
+            format_checker=draft7_format_checker).validate(instance)
