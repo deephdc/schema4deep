@@ -1,0 +1,12 @@
+{
+    "$schema": "https://json-schema.org/schema#",
+
+    "type": "object",
+    "properties": {
+        "title": {
+          "description": "Name of the Data Science application",
+          "type": "string"
+        }
+    },
+    "required": ["title"]
+}

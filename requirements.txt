@@ -1,0 +1,2 @@
+simplejson==3.16.0
+jsonschema==3.0.0b3
