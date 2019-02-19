@@ -1,5 +1,37 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
+	"definitions": {
+		"tosca": {
+			"type": "object",
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "inputs": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "rclone_conf",
+                            "rclone_url",
+                            "rclone_vendor",
+                            "rclone_user",
+                            "rclone_pass"
+                        ]
+                    }
+                }
+            },
+            "required": [
+                "title",
+                "url",
+                "inputs"
+            ]
+        }
+    },
     "type": "object",
     "properties": {
         "title": {
@@ -64,6 +96,10 @@
                 "docker_registry_repo",
                 "code"
             ]
+        },
+        "tosca": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/tosca" }
         }
     },
     "required": [
