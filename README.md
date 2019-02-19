@@ -15,9 +15,7 @@ jsonschema](https://pypi.org/project/jsonschema/) module.
 Once schema4deep is deployed, the `deep-app-schema-validator` CLI tool is
 provided, which accepts schema instances as input parameters.
 
-## Deployment
+## Installation
 ```
-$ git clone https://github.com/deephdc/schema4deep
-$ cd schema4deep
-$ pip install .
+$ pip install git+https://github.com/deephdc/schema4apps
 ```
