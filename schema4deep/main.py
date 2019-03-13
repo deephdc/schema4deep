@@ -1,10 +1,12 @@
 import argparse
-from jsonschema import Draft7Validator
-from jsonschema import draft7_format_checker
+import os
 import simplejson as json
 
+from jsonschema import Draft7Validator
+from jsonschema import draft7_format_checker
 
-SCHEMA = './schemata/deep-apps.json'
+
+SCHEMA = os.path.join(os.path.dirname(__file__), '../schemata/deep-apps.json')
 
 def load_json(f):
     data = f.read()

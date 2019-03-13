@@ -9,6 +9,8 @@ setup(
     author_email='orviz@ifca.unican.es',
     license='Apache 2.0',
     packages=['schema4deep'],
+    package_dir={'schema4deep':'schema4deep'},
+    package_data={'schema4deep': ['schemata/deep-apps.json']},
     install_requires=[
         'jsonschema>=3.0.0b3',
         'rfc3987>=1.3.8',
