@@ -66,6 +66,11 @@
             "description": "License adopted by the Data Science application",
             "type": "string"
         },
+        "cite_url": {
+            "description": "URL pointing to the relevant citation",
+            "type": "string",
+            "format": "uri"
+        },
         "sources": {
             "title": "sources",
             "type": "object",
