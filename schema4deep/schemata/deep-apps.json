@@ -71,6 +71,11 @@
             "type": "string",
             "format": "uri"
         },
+        "dataset_url": {
+            "description": "URL pointing to the relevant dataset",
+            "type": "string",
+            "format": "uri"
+        },
         "sources": {
             "title": "sources",
             "type": "object",
