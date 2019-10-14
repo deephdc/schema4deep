@@ -8,7 +8,7 @@ will be eventually used by the
 and give access to the applications.
 
 ## Implementation
-The [schema](schemata/deep-apps.json) has been implemented according to [JSON
+The [schema](schema4deep/schemata/deep-apps.json) has been implemented according to [JSON
 schema specification](https://json-schema.org/) (Draft 7), using [Python's
 jsonschema](https://pypi.org/project/jsonschema/) module.
 
